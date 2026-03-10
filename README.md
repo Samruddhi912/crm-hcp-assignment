@@ -74,8 +74,9 @@ Edit: "Change the sentiment of my last meeting with Dr. Arishta to Neutral."
 Inventory: "Do we have any 'Clinical Trial Summaries' in stock?"
 
 ### 📁 Repository Structure
-graph TD
+
 ```
+graph TD
     A[React Frontend] -->|REST API| B(FastAPI Backend)
     B --> C{LangGraph Agent}
     C -->|Tool Call| D[(MySQL Database)]
