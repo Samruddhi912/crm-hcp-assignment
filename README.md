@@ -60,7 +60,9 @@ npm install
 # Start the development server
 npm run dev
 ```
-###🤖 AI Agent Testing
+
+
+### 🤖 AI Agent Testing
 You can test the agent's logic by typing the following in the Chat Assistant:
 
 Log: "I just met Dr. Arishta and discussed the new cardiovascular results. She was very impressed. Log this."
@@ -71,8 +73,7 @@ Edit: "Change the sentiment of my last meeting with Dr. Arishta to Neutral."
 
 Inventory: "Do we have any 'Clinical Trial Summaries' in stock?"
 
-###📁 Repository Structure
-Plaintext
+### 📁 Repository Structure
 crm-hcp-assignment/
 ├── backend/
 │   ├── main.py          # FastAPI & LangGraph logic
@@ -85,12 +86,10 @@ crm-hcp-assignment/
 │   │   └── store.js     # Redux State Management
 └── README.md
 
-
-### Final Push Commands
-Once you have saved that file, run these in your terminal to finish:
+### 🛠️ Step 2: Final Command to Update GitHub
+After saving the file, run this one last time in your terminal:
 
 ```bash
-git add .
-git commit -m "Add professional README with bash instructions"
-git push -f origin main
-```
+git add README.md
+git commit -m "docs: Fix README formatting"
+git push origin main
