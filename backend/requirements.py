@@ -1,0 +1,10 @@
+'''
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+langchain-groq
+langgraph
+pydantic
+python-dotenv
+'''
