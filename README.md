@@ -74,22 +74,18 @@ Edit: "Change the sentiment of my last meeting with Dr. Arishta to Neutral."
 Inventory: "Do we have any 'Clinical Trial Summaries' in stock?"
 
 ### 📁 Repository Structure
-crm-hcp-assignment/
-├── backend/
-│   ├── main.py          # FastAPI & LangGraph logic
-│   ├── models.py        # SQLAlchemy MySQL Models
-│   ├── database.py      # Connection configuration
-│   └── .env             # API Keys (Git ignored)
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx      # UI Components
-│   │   └── store.js     # Redux State Management
-└── README.md
+graph TD
+    A[React Frontend] -->|REST API| B(FastAPI Backend)
+    B --> C{LangGraph Agent}
+    C -->|Tool Call| D[(MySQL Database)]
+    C -->|Tool Call| E[Inventory Check]
+    B -->|Groq LLM| C
 
-### 🛠️ Step 2: Final Command to Update GitHub
+### 🛠️ 4: Final Command to Update GitHub
 After saving the file, run this one last time in your terminal:
 
 ```bash
 git add README.md
 git commit -m "docs: Fix README formatting"
 git push origin main
+```
