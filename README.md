@@ -75,11 +75,14 @@ Inventory: "Do we have any 'Clinical Trial Summaries' in stock?"
 
 ### 📁 Repository Structure
 graph TD
+```
     A[React Frontend] -->|REST API| B(FastAPI Backend)
     B --> C{LangGraph Agent}
     C -->|Tool Call| D[(MySQL Database)]
     C -->|Tool Call| E[Inventory Check]
     B -->|Groq LLM| C
+```
+
 
 ### 🛠️ 4: Final Command to Update GitHub
 After saving the file, run this one last time in your terminal:
